@@ -1,0 +1,171 @@
+.header-icon {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 1440px;
+  height: 1024px;
+  object-fit: cover;
+}
+.profile-card-child {
+  position: absolute;
+  top: 160.76px;
+  left: 0;
+  border-radius: 10px;
+  width: 488px;
+  height: 500px;
+  mix-blend-mode: hard-light;
+}
+.kabyanjali-behera,
+.mitu2020btcs0986 {
+  position: absolute;
+  left: 166.73px;
+  display: inline-block;
+}
+.kabyanjali-behera {
+  top: 14.87px;
+  font-size: 30px;
+  font-weight: 500;
+  width: 306.02px;
+  height: 58.42px;
+}
+.mitu2020btcs0986 {
+  top: 63.73px;
+  width: 245.02px;
+  height: 29.74px;
+}
+.profile-card-item {
+  position: absolute;
+  top: -5px;
+  left: 21.43px;
+  border-radius: 50%;
+  width: 132px;
+  height: 137.45px;
+  object-fit: cover;
+}
+.student {
+  position: absolute;
+  top: 93.47px;
+  left: 166.73px;
+  font-weight: 300;
+  display: inline-block;
+  width: 89.47px;
+  height: 38.24px;
+}
+.college {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 30px;
+  display: flex;
+  align-items: flex-end;
+  width: 116.92px;
+  height: 31.86px;
+  min-width: 30px;
+}
+.course {
+  top: 97.72px;
+  min-width: 30px;
+}
+.cgpa,
+.course,
+.email,
+.year {
+  position: absolute;
+  left: 0;
+  line-height: 30px;
+  display: flex;
+  align-items: flex-end;
+  width: 116.92px;
+  height: 31.86px;
+}
+.year {
+  top: 195.43px;
+  min-width: 30px;
+}
+.cgpa,
+.email {
+  top: 293.15px;
+}
+.email {
+  top: 390.86px;
+  min-width: 30px;
+}
+.btech-in-computer,
+.div,
+.hostelite-103,
+.school-of-computing,
+.second-year {
+  position: absolute;
+  top: 91.34px;
+  left: 156.57px;
+  font-size: var(--font-size-3xl);
+  color: var(--color-black);
+  display: flex;
+  align-items: flex-end;
+  width: 297.88px;
+  height: 63.73px;
+}
+.div,
+.hostelite-103,
+.school-of-computing,
+.second-year {
+  top: 195.43px;
+  left: 164.7px;
+  width: 236.88px;
+  height: 31.86px;
+}
+.div,
+.hostelite-103,
+.school-of-computing {
+  top: 293.15px;
+  left: 171.82px;
+}
+.hostelite-103,
+.school-of-computing {
+  top: 0;
+  left: 141.32px;
+  width: 255.18px;
+}
+.hostelite-103 {
+  top: 390.86px;
+  left: 151.48px;
+  letter-spacing: 0.05em;
+  width: 296.87px;
+}
+.information-1 {
+  position: absolute;
+  top: 189.06px;
+  left: 26.43px;
+  width: 454.45px;
+  height: 422.72px;
+  color: var(--color-gray);
+}
+.profile-card {
+  position: absolute;
+  top: 235px;
+  left: 476px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 488px;
+  height: 660.76px;
+}
+.desktop-1-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1211px;
+  height: 318px;
+  object-fit: cover;
+}
+.desktop-1 {
+  position: relative;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
