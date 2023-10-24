@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>University Forum</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src = "{{ url_for('static', filename='logooo.png') }}" class="logo">  
+                <a href="/profile"><img src = "{{ url_for('static', filename='profileimg.png') }}" class="profile"></a>
+            </div>
+            <div class="navpane">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/communities">Communites</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <ul>
+                        <textarea id="search" rows="1" placeholder="Search..."></textarea>
+                    </ul>
+                </ul>
+            </div>
+            <div class="contents">
+                <h1>
+                    Events
+                </h1>
+                <ul>
+                    <container class="imagecontainer">
+                        <img src="{{ url_for('static', filename='Picture1.jpg') }}" class="event">
+                        <p>Idea Power Hour</p>
+                    </container>
+                    <container class="imagecontainer">
+                        <img src="{{ url_for('static', filename='Picture2.jpg') }}" class="event">
+                        <p>Expert Talks on Pera Eduvision</p>
+                    </container>
+                    <container class="imagecontainer">
+                        <img src="{{ url_for('static', filename='Picture3.jpg') }}" class="event">
+                        <p>Learn About Snakes</p>
+                    </container>
+                    <container class="imagecontainer">
+                        <img src="{{ url_for('static', filename='Picture4.jpg') }}" class="event">
+                        <p>Backend Web Development</p>
+                    </container>
+
+                </ul>
+                
+            </div>
+            <div class="contents">
+                <h1>
+                    Blogs
+                </h1>
+                <ul>
+                    <img src="{{ url_for('static', filename='blog1.jpg') }}" class="event">
+                    <img src="{{ url_for('static', filename='blog2.jpg') }}" class="event">
+                    <img src="{{ url_for('static', filename='blog3.jpg') }}" class="event">
+                    <img src="{{ url_for('static', filename='blog4.jpg') }}" class="event">
+                    <img src="{{ url_for('static', filename='blog5.jpg') }}" class="event">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

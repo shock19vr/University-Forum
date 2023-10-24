@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>University Forum</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='announcements.css') }}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src = "{{ url_for('static', filename='logooo.png') }}" class="logo">  
+                <a href="/profile"><img src = "{{ url_for('static', filename='profileimg.png') }}" class="profile"></a>
+            </div>
+            <div class="navpane">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/communities">Communites</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <ul>
+                        <textarea id="search" rows="1" placeholder="Search..."></textarea>
+                    </ul>
+                </ul>
+            </div>
+            <div class="data">
+                <div class="contents2">         
+                    <div class="container">
+                        <img id="imageDisplay" src="{{ url_for('static', filename='Picture1.jpg') }}" alt="Image">
+                    </div>
+                    <div class="slider">
+                        <i class='bx bxs-chevron-left bx-lg' id="prev"></i>
+                        <div class="preview">
+                            <img src="{{ url_for('static', filename='Picture1.jpg') }}" class="active thumbnail">
+                            <img src="{{ url_for('static', filename='Picture2.jpg') }}" class="thumbnail">
+                            <img src="{{ url_for('static', filename='Picture3.jpg') }}" class="thumbnail">
+                            <img src="{{ url_for('static', filename='Picture4.jpg') }}" class="thumbnail">
+                        </div>
+                        <i class='bx bxs-chevron-right bx-lg' id="next"></i>
+                    </div>
+    
+                    <script>
+                        var prev = document.getElementById("prev");
+                        var next = document.getElementById("next");
+                        var thumbnail = document.getElementsByClassName("thumbnail")
+                        var imageDisplay = document.getElementById("imageDisplay")
+        
+                        var Img = new Array(
+                            "{{ url_for('static', filename='Picture1.jpg') }}",
+                            "{{ url_for('static', filename='Picture2.jpg') }}",
+                            "{{ url_for('static', filename='Picture3.jpg') }}",
+                            "{{ url_for('static', filename='Picture4.jpg') }}",
+                        );
+                        let i = 0;
+        
+                        function changeImage(imageSrc){
+                            imageDisplay.src = imageSrc;
+                            i = Img.indexOf(imageSrc);
+                        }
+        
+                        next.onclick = function(){
+                            if (i < Img.length - 1){
+                
+                            i++;
+                            imageDisplay.src = Img[i];
+                            thumbnail[i].classList.add("active")
+                            thumbnail[i-1].classList.remove("active")
+                            }
+                        }
+                        prev.onclick = function(){
+                            if (i > 0){
+                        
+                            i--;
+                            imageDisplay.src = Img[i];
+                            thumbnail[i].classList.add("active")
+                            thumbnail[i+1].classList.remove("active")
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

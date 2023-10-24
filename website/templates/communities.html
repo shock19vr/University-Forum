@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>University Forum</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src = "{{ url_for('static', filename='logooo.png') }}" class="logo">  
+                <a href="/profile"><img src = "{{ url_for('static', filename='profileimg.png') }}" class="profile"></a>
+            </div>
+            <div class="navpane">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/communities">Communites</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <ul>
+                        <textarea id="search" rows="1" placeholder="Search..."></textarea>
+                    </ul>
+                </ul>
+            </div>
+            <div class="contents">
+                <h1>
+                    Community
+                </h1>
+                <div class="commu">
+                    <div class="list">
+                        <h2>Clubs</h2>
+                        <p><a href="#">CBC</a></p>
+                        <p><a href="#">Geeks for Geeks</a></p>
+                        <p><a href="#">Cloud Computing Club</a></p>
+                        <p><a href="#">Swift Coding Club</a></p>
+                        <p><a href="#">Adventure Club</a></p>
+                        <p><a href="#">Boat Club</a></p>
+                    </div>
+                    <div class="chat">
+                        <h2>Chat</h2>
+                    </div>
+                    <div class="member">
+                        <h2>Members</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </body>
+</html>
