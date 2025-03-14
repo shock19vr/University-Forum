@@ -139,18 +139,11 @@ h1 {
   }
 
 
-/*
+
 .container{
-    height: 350px;
-    max-width: auto;
-    height: 78vh;
-    background: rgba(86, 86, 86, 0.3);
-    backdrop-filter: blur(10px);
-    
-    overflow: hidden;
-    border: 1px solid #ccc;
+    display: block;
+    padding: 20px;
 }
-*/
 
 .container img{
     margin: 10 0;

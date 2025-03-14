@@ -3,11 +3,12 @@ import csv
 
 
 auth = Blueprint('auth',__name__)
-
+token = 0
 @auth.route('/', methods = ['GET','POST'])
 def login():
     msg = ''
     happy = ''
+    
     if request.method == 'POST':
         email = request.form.get('email')
         passw = request.form.get('pass')
@@ -29,10 +30,21 @@ def login():
                         print("Success")
                         happy = "Login Successful"
                         msg = ''
+                        with open('details.csv', mode='r') as file:
+                            reader = csv.reader(file)
+                            file.seek(0)
+                            for row in reader:
+                                if data[0] == row[0]:
+                                    global token
+                                    token = row[2]
+
+
                         return render_template("home.html")
                     else:
                         msg = "Invalid Login Info"          
     return render_template("login.html", message = msg, success = happy)
+
+
 
 @auth.route('/registration', methods = ['GET','POST'])
 def registration():
@@ -43,6 +55,8 @@ def registration():
         enroll = request.form.get('enroll')
         passw = request.form.get('pass')
         conpass = request.form.get('conpass')
+        name = request.form.get('name')
+        course = request.form.get('course')
         
         
         if '@' not in email.lower():
@@ -61,16 +75,22 @@ def registration():
                 reader = csv.reader(file)
                 data = [email.lower(),enroll.lower()]
                 count = 0
+                mem = 1
                 file.seek(0)
                 for row in reader:
                     if data[0] == row[0]:
                         msg = "Email is already Registered"
                         count = 1
+                        
                         break
                     else:
+                        mem = mem + 1
                         pass
                 if count == 0:
                     writer.writerow([email.lower(), enroll.lower(), passw])
+                    with open('details.csv', mode='a+', newline='') as file:
+                        writer = csv.writer(file)
+                        writer.writerow([email.lower(), enroll.lower(), mem,name,course])
                     print("Registered")
                     msg = ''
                     happy = "Registered Successfully" 

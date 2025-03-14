@@ -1,0 +1,73 @@
+.chat{
+    background-color: rgb(20, 212, 203);
+    
+    color:black;
+    margin: 50 0; 
+    font-family: 'Source Sans Pro', sans-serif;
+
+    overflow-y: auto;
+    overflow-x: auto;
+    
+
+    
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+.chat h2{
+    margin: 10 10;
+}
+.member{
+    background-color: rgb(248, 216, 127);
+    
+    color:black;
+    margin: 50 50; 
+    font-family: 'Source Sans Pro', sans-serif;
+
+    overflow-y: auto;
+
+    
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+}
+.member h2{
+    margin: 10 10;
+}
+
+.msgs{
+    margin: 10 10;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: auto;
+}
+
+.typemsg{
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.discus{
+    display: inline-flex;
+    color: black;
+}

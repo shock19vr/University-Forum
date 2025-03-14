@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='maps.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src = "{{ url_for('static', filename='logooo.png') }}" class="logo">  
+            <a href="/profile"><img src = "{{ url_for('static', filename='profileimg.png') }}" class="profile"></a>
+        </div>
+        <div class="navpane">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/announcements">Announcements</a></li>
+                <li><a href="/communities">Communites</a></li>
+                <li><a href="/academics">Academics</a></li>
+                <li><a href="/maps">Maps</a></li>
+                <li><a href="/help">Help</a></li>
+                <ul>
+                    <textarea id="search" rows="1" placeholder="Search..."></textarea>
+                </ul>
+            </ul>
+        </div>
+    
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7567.5720274695805!2d74.02455894999997!3d18.493349550000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e8015a3da997%3A0x6ea28cf1924e2860!2sMIT%20ADT%20UNIVERSITY%2C%20Loni%20Kalbhor%2C%20Maharashtra%20412201!5e0!3m2!1sen!2sin!4v1697904232201!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>

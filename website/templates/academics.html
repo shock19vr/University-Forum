@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>University Forum</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='academics.css') }}">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src = "{{ url_for('static', filename='logooo.png') }}" class="logo">  
+                <a href="/profile"><img src = "{{ url_for('static', filename='profileimg.png') }}" class="profile"></a>
+            </div>
+            <div class="navpane">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/communities">Communites</a></li>
+                    <li><a href="/academics">Academics</a></li>
+                    <li><a href="/maps">Maps</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <ul>
+                        <textarea id="search" rows="1" placeholder="Search..."></textarea>
+                    </ul>
+                </ul>
+            </div>
+            <div class="contents2">
+                
+                <div class="entity">
+                    <img src="{{ url_for('static', filename='pdficon.jpg') }}" class="dwnimg">
+                    <a href="{{ url_for('static', filename='pdf1.pdf') }}" download="" class="ref">
+                        <input type="button" value="IPC Unit 1" class="btn">
+                    </a>
+                </div>
+                <div class="entity">
+                    <img src="{{ url_for('static', filename='pdficon.jpg') }}" class="dwnimg">
+                    <a href="{{ url_for('static', filename='pdf2.pdf') }}" download="" class="ref">
+                        <input type="button" value="IPC Unit 2" class="btn">
+                    </a>
+                </div>
+                <div class="entity">
+                    <img src="{{ url_for('static', filename='pdficon.jpg') }}" class="dwnimg">
+                    <a href="{{ url_for('static', filename='pdf3.pdf') }}" download="" class="ref">
+                        <input type="button" value="IPC Unit 3" class="btn">
+                    </a>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </body>
+</html>
